@@ -1,0 +1,11 @@
+C:\Users\pedro.caricari\source\repos\WCFService\bin\WCFService.dll.config
+C:\Users\pedro.caricari\source\repos\WCFService\bin\WCFService.dll
+C:\Users\pedro.caricari\source\repos\WCFService\bin\WCFService.pdb
+C:\Users\pedro.caricari\source\repos\WCFService\obj\Debug\WCFService.csproj.AssemblyReference.cache
+C:\Users\pedro.caricari\source\repos\WCFService\obj\Debug\WCFService.csproj.CoreCompileInputs.cache
+C:\Users\pedro.caricari\source\repos\WCFService\obj\Debug\WCFService.dll
+C:\Users\pedro.caricari\source\repos\WCFService\obj\Debug\WCFService.pdb
+C:\Users\pedro.caricari\source\repos\WCFService\bin\Newtonsoft.Json.dll
+C:\Users\pedro.caricari\source\repos\WCFService\bin\Oracle.ManagedDataAccess.dll
+C:\Users\pedro.caricari\source\repos\WCFService\bin\Newtonsoft.Json.xml
+C:\Users\pedro.caricari\source\repos\WCFService\obj\Debug\WCFService.csproj.CopyComplete
