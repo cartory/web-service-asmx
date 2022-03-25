@@ -47,6 +47,7 @@ namespace utils
             }
         }
 
+        [Obsolete]
         private void CloseConnection()
         {
             try
