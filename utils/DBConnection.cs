@@ -4,8 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-
-using Oracle.ManagedDataAccess.Client;
+using System.Data.OracleClient;
 
 namespace utils
 {
@@ -13,11 +12,13 @@ namespace utils
     {
         public static DBConnection Instance => _instance;
         private static readonly DBConnection _instance = new DBConnection();
-
+        
+        [Obsolete]
         private OracleConnection Connection;
 
         private DBConnection() { }
 
+        [Obsolete]
         public DBConnection SetConnectionString(string connectionString)
         {
             if (string.IsNullOrEmpty(connectionString)) 
@@ -30,6 +31,7 @@ namespace utils
             return this;
         }
 
+        [Obsolete]
         private void OpenConnection()
         {
             try
@@ -60,6 +62,7 @@ namespace utils
             }
         }
 
+        [Obsolete]
         public T Query<T>(Func<OracleCommand, T> callback)
         {
             try
@@ -80,6 +83,7 @@ namespace utils
             }
         }
 
+        [Obsolete]
         public void Query(Action<OracleCommand> callback)
         {
             this.Query((command) =>
@@ -89,6 +93,7 @@ namespace utils
             });
         }
 
+        [Obsolete]
         public int NonQuery(string sql)
         {
             return this.Query((command) => {
@@ -112,6 +117,7 @@ namespace utils
             });
         }
 
+        [Obsolete]
         public Hashtable[] Query(string sql)
         {
             return this.Query((command) => {
