@@ -109,12 +109,11 @@ namespace utils
 
                     return rowsAffected;
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
                     command.Transaction.Rollback();
+                    throw e;
                 }
-
-                return 0;
             });
         }
 
